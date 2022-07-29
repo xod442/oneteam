@@ -1,0 +1,69 @@
+
+DEALS
+{
+"_id" : ObjectId("62ccb804cbcba1098c9eaff5"),
+"username" : "tom",
+"deal" : "x",
+"company" : "Honeywell",
+"customer" : "x",
+"ope" : "x",
+"quarter" : "q1",
+"accountmgr" : "x",
+"price" : "100000",
+"status" : "pursuit",
+"thoughts" : "x",
+"partner" : "x",
+"notes" : "vv",
+"number" : 1,
+"uuid" : "35128b46-5cf9-4354-afb3-aca1cef818b5",
+"when" : ISODate("2022-07-11T23:53:40.603Z")
+ }
+
+ACTIONS
+{
+"_id" : ObjectId("62cdcac59a0ffae6480c6812"),
+"username" : "tom",
+"action" : "Coordinate meeting with Don and Caroline",
+"owner" : "Mike/Caroline",
+"notes" : "NONE",
+"due_date" : "02-00-2023",
+"company" : "Freeport McMoran",
+"number" : 18,
+"uuid" : "05018723-9a43-415f-9fe4-270d8bf72f41",
+"status" : "open",
+"when" : ISODate("2022-07-12T19:25:57.428Z")
+}
+LOGS
+{
+"owner": "myuserid",
+"log_info": "TBS - 453A M.2 Nas›"
+}
+COMPANY
+{ "_id" : ObjectId("62d08161f1ad4b59055e53c7"),
+"name" : "rick kauffman",
+"uuid" : "c3aed8e0-98a2-4a78-9dff-72e58340d180",
+"number" : 16,
+"when" : ISODate("2022-07-14T20:49:37.775Z")
+}
+CUSTOMER
+{
+"_id" : ObjectId("6257560643e924aa33f0993a"),
+"company" : "Republic Services",
+"name" : "Ricky Allen Kauffman",
+"phone" : "602-999-3495",
+"email" : "rick@rickkauffman.com",
+"uuid" : "12a3a8c4-310b-4b15-810a-951ca1def36b",
+"number" : 2,
+"when" : ISODate("2022-04-13T23:00:22.076Z")
+}
+MEETINGS
+{
+"_id" : ObjectId("625746c48bcf4e455a26dd0b"),
+"owner" : "rick",
+"company" : "Honeywell",
+"title" : "my title",
+"notes" : "asdsadad\r\nASDASDD",
+"uuid" : "e46166fc-3f6f-41ec-94cf-0e2a3206c3b7",
+"number" : 2,
+"when" : "2022-04-13"
+}

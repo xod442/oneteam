@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white">Select Travel</h2>
+                    <form method="POST" action="{{ url_for('travel_app.list_travel', username = username)}}">
+                      <div class="col-sm-4">
+                          <select class="selectpicker" name="travel-desc">
+                              <option selected value="unselected">unselected</option>
+                              {% for trav in my_travel %}
+                                  <option value="{{ trav }}">{{ trav }}</option>
+                              {% endfor %}
+                          </select>
+                          <div style="color:red">
+                            {{ message }}
+                          </div>
+                      </div>
+                      <br>
+                      <div>
+                        <input type="text" hidden value="{{ username }}" name="username">
+                        {{ message }}
+                      </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Select Travel</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

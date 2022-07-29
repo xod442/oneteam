@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  web_arch:
+    build: .
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/opt
+    links:
+    - mongo_arch
+  mongo_arch:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: siesta3
+      MONGO_INITDB_DATABASE: arch
+    volumes:
+      - mongo-data4:/data/db
+      - mongo-configdb4:/data/configdb
+volumes:
+  mongo-data4:
+    driver: local
+  mongo-configdb4:

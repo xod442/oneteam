@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+
+<header id="masthead" class="site-header site-header-white">
+
+    <section class="site-section section-ui-elements">
+        <div class="container">
+
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator">Add Log Entry</h2>
+                    <form method="POST" action="{{ url_for('.add_log')}}">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="email">Enter log information in text box below:</label>
+                                  <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Add Log</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

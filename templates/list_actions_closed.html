@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+                    <h2 style="color:white" >List of Actions</h2>
+                    <form method="POST" action="{{ url_for('main_app.home_again', message=message, username=username)}}">
+                      <<div class="data-tables datatable-dark">
+                            <table id="example" class="styled-table">
+                                  <thead class="text-capitalize">
+                                      <tr>
+                                          <th>Number</th>
+                                          <th>Assigned</th>
+                                          <th>Due</th>
+                                          <th>Company</th>
+                                          <th>Action</th>
+                                          <th>Status</th>
+                                          <th>Notes</th>
+                                          <th>Edit</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                          {% for action in my_actions %}
+                                          <tr>
+                                              <td>{{action[0]}}</td>
+                                              <td>{{action[1]}}</td>
+                                              <td>{{action[2]}}</td>
+                                              <td>{{action[3]}}</td>
+                                              <td>{{action[4]}}</td>
+                                              <td>{{action[5]}}</td>
+                                              <td>{{action[6]}}</td>
+                                              <td><a href="{{ url_for('actions_app.edit_action_list_closed',username=username,
+                                                                                                number=action[0],
+                                                                                                owner=action[1],
+                                                                                                due_date=action[2],
+                                                                                                company=action[3],
+                                                                                                action=action[4],
+                                                                                                status=action[5],
+                                                                                                notes=action[6]) }}"><img src="{{ url_for('static', filename='img/edit.png') }}" width="20" height="20"></a></td>
+                                          </tr>
+                                          {% endfor %}
+                                      </tbody>
+                              </table>
+
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">HOME</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+
+  {% endblock %}
+  {% block scripts %}
+
+  {% endblock %}

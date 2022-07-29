@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                  <h2 class="text-center heading-separator" style="color:white">Add Deal</h2>
+                  <form method="POST" action="{{ url_for('deals_app.add_deal', username=username)}}">
+                      <div class="row">
+                        <label for="company" style="color:white">Company:</label>
+                        <select class="selectpicker" name="company">
+                            <option>unselected</option>
+                            {% for comp in my_companies %}
+                                <option>{{ comp }}</option>
+                            {% endfor %}
+                        </select>
+                        <select class="selectpicker" name="status">
+                          <option value="pursuit" selected>pursuit</option>
+                          <option value="won">won</option>
+                          <option value="dev">dev</option>
+                          <option value="closed">closed</option>
+                        </select>
+
+                        <select class="selectpicker" name="quarter">
+                          <option value="q1" selected>Q1</option>
+                          <option value="q2">Q2</option>
+                          <option value="q3">Q3</option>
+                          <option value="q4">Q4</option>
+                        </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="partner" style="color:white">Partner:</label>
+                              <input type="text" required value="{{ partner }}" class="form-control" id="partner" name="partner">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="customer" style="color:white">Customer Name:</label>
+                              <input type="text" required value="{{ customer }}" class="form-control" id="customer" name="customer">
+                              </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                              <label for="ope" style="color:white">OPE#:</label>
+                              <input type="text" required value="{{ ope }}" class="form-control" id="ope" name="ope">
+                              </div>
+                        </div>
+                          <div class="col-sm-8">
+                              <div class="form-group">
+                                <label for="deal" style="color:white">Deal Description:</label>
+                                <input type="text" required value="{{ deal }}"class="form-control" id="deal" name="deal">
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="form-group">
+                                <label for="price" style="color:white">Deal Size:</label>
+                                <input type="text" required value="{{ price }}"class="form-control" placeholder="185000" id="price" name="price">
+                              </div>
+                          </div>
+
+
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                <label for="thoughts" style="color:white">Thoughts:</label>
+                                <input type="text" required value="{{ thoughts }}"class="form-control" id="thoughts" name="thoughts">
+                              </div>
+                          </div>
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                <label for="accountmgr" style="color:white">Account Manager:</label>
+                                <input type="text" required value="{{ accountmgr }}"class="form-control" id="accountmgr" name="accountmgr">
+                              </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div>
+                              <label for="notes" style="color:white">Notes:</label>
+                              <textarea id="notes" placeholder="Do Not Use Quotes" required name="notes" rows="7" cols="100">{{ notes }}</textarea>
+                            </div>
+                          </div>
+
+                      </div>
+                      <div>
+                          <input type="text" hidden value="{{ username }}" name="username">
+                            {{ message }}
+                      </div>
+                      <div class="text-center mt-20">
+                          <button class="btn btn-green">Add Deal</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+
+
+
+  {% endblock %}

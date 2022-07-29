@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+          
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white">Add Contact</h2>
+                    <form method="POST" action="{{ url_for('customer_app.add_customer', username = username)}}">
+                        <div class="row">
+                          <select class="selectpicker" name="company">
+                              <option value="unselected">unselected</option>
+                              {% for comp in my_companies %}
+                                  <option value="{{ comp }}">{{ comp }}</option>
+                              {% endfor %}
+                          </select>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">Name:</label>
+                                  <input type="text" value="{{ name }}" class="form-control" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">Phone:</label>
+                                  <input type="tel" placeholder="123-456-7890" value="{{ phone }}" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">email:</label>
+                                  <input type="email" placeholder="bob@bob.com" value="{{ email }}" class="form-control" id="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" hidden value="{{ username }}" name="username">
+                              {{ message }}
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Add Customer</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

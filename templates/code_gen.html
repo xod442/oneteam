@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+        <div class="container">
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white"> User Code</h2>
+                    <form>
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <div>
+                                <label for="notes">User Info:</label>
+                                <textarea id="user_info" name="user_info" rows="1" cols="100">{{ user_info }}</textarea>
+                              </div>
+                              <p> Copy and paste this to an email for this user</p>
+                          </div>
+
+                      </div>
+
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

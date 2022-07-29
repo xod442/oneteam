@@ -1,0 +1,59 @@
+
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+        <div class="col-lg-8">
+          <h4 style="color:white">Username: {{ username }}</h4>
+                <!-- seo fact area start -->
+                <div class="card">
+                      <div class="card-body">
+                        <form method="POST" action="{{ url_for('travel_app.edit_travel_complete')}}">
+                        <label for="travel_desc" style="color:white">Travel Information:</label>
+                        <input type="text" value="{{ info[0] }}" class="form-control" id="travel-desc" name="travel-desc">
+                        <div class="data-tables datatable-dark">
+                              <table class="styled-table">
+                                    <thead class="text-capitalize">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Takeoff</th>
+                                            <th>Landing</th>
+                                            <th>Flight</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" value="{{ info[1] }}" class="form-control" id="date-out" name="date-out"></td>
+                                                <td><input type="text" value="{{ info[2] }}" class="form-control" id="takeoff-out" name="takeoff-out"></td>
+                                                <td><input type="text" value="{{ info[3] }}" class="form-control" id="land-out" name="land-out"></td>
+                                                <td><input type="text" value="{{ info[4] }}" class="form-control" id="flight-out" name="flight-out"></td>
+                                            </tr>
+                                            <tr>
+                                              <td><input type="text" value="{{ info[5] }}" class="form-control" id="date-back" name="date-back"></td>
+                                              <td><input type="text" value="{{ info[6] }}" class="form-control" id="takeoff-back" name="takeoff-back"></td>
+                                              <td><input type="text" value="{{ info[7] }}" class="form-control" id="land-back" name="land-back"></td>
+                                              <td><input type="text" value="{{ info[8]}}" class="form-control" id="flight-back" name="flight-back"></td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                                </div>
+                                <input type="text" hidden value="{{ info[10] }}" id="number" name="number">
+                                <input type="text" hidden value="{{ username }}" name="username">
+                                <div>
+                                  <label for="notes">Travel Notes:</label><br>
+                                  <textarea id="notes" name="notes" rows="10" cols="100">{{info[9]}}</textarea>
+                                </div>
+                                <div>
+                                  <input type="text" hidden value="{{ username }}" name="username">
+                                  {{ message }}
+                                </div>
+                                <div class="text-center mt-20">
+                                    <button class="btn btn-green">Save Changes</button>
+                                </div>
+                            </form>
+                      </div>
+                </div>
+        </div>
+
+   {% endblock %}

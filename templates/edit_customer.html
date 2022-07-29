@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white">Edit Contact</h2>
+                    <form method="POST" action="{{ url_for('customer_app.edit_customer', username = username)}}">
+                      <div class="col-sm-12">
+                          <select class="selectpicker" name="customer">
+                              <option value="unselected" >unselected</option>
+                              {% for cust in my_customers %}
+                                  <option value="{{ cust }}">{{ cust }}</option>
+                              {% endfor %}
+                          </select>
+                          <div style="color:red">
+                            {{ message }}
+                          </div>
+                      </div>
+                      <br>
+                      <div>
+                        <input type="text" hidden value="{{ username }}" name="username">
+                        {{ message }}
+                      </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Edit Contact</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

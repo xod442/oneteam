@@ -1,0 +1,8 @@
+flask==1.1.4
+flask-script
+flask_pymongo
+MarkupSafe==2.0.1
+pytest
+PyMongo
+requests
+flask-cors

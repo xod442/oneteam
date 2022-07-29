@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-50">
+        <div class="col-md-12 col-md-offset-2">
+            <form method="POST" action="{{ url_for('main_app.home_again', message=message, username=username)}}">
+                <div class="row">
+                    <div class="col-sm-12">
+                      <h3><em>Click the 8 ball to shake it</em></h3>
+                        <div class="col-md-6">
+                            <iframe id="magic-8ball" style="width:75%;border:none;overflow:hidden;min-height:415px" src="https://magic-8ball.com/?embed_widget" scrolling="no"></iframe>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">HOME</button>
+                        </div>
+
+               </form>
+         </div>
+</div>
+
+{% endblock %}
