@@ -48,7 +48,7 @@ def prep_logs(db):
     json_logs = loads(dumps(get_logs))
     for item in json_logs:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

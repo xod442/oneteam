@@ -63,7 +63,7 @@ def prep_travel(db):
     json_travel = loads(dumps(get_travel))
     for item in json_travel:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

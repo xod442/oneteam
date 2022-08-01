@@ -49,7 +49,7 @@ def prep_meeting(db):
     json_meetings = loads(dumps(get_meetings))
     for item in json_meetings:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

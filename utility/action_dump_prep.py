@@ -48,7 +48,7 @@ def prep_actions(db):
     json_actions = loads(dumps(get_actions))
     for item in json_actions:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

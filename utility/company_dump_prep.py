@@ -81,7 +81,7 @@ def prep_company(db):
     json_company = loads(dumps(get_company))
     for item in json_company:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

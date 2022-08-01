@@ -48,7 +48,7 @@ def prep_deals(db):
     json_deals = loads(dumps(get_deals))
     for item in json_deals:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

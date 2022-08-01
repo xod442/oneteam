@@ -48,7 +48,7 @@ def prep_customer(db):
     json_customer = loads(dumps(get_customer))
     for item in json_customer:
         item = str(item)
-        item = item.replace("\'", "\"")
+        #item = item.replace("\'", "\"")
         f.write(item)
         f.write(cr)
     f.close()

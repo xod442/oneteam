@@ -143,6 +143,8 @@ def loadcsv(username):
         line = f.readline()
         line = line.rstrip()
         action = line.split(',')
+        if action[0] == '':
+            break
 
         # Generate UUID
         my_uuid = uuid.uuid4()
