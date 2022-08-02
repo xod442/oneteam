@@ -74,4 +74,6 @@ def create_app():
     from list.views import list_app
     app.register_blueprint(list_app)
 
+    app.run(ssl_context='adhoc')
+
     return app

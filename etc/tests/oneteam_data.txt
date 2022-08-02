@@ -1,0 +1,125 @@
+@-actions
+{"username": "tom", "action": "Present Final proposal", "owner": "Rick & Matt", "notes": "GL ROSA proposal soon", "due_date": "07-02-2022", "company": "GBTG", "status": "open"}
+{"username": "tom", "action": "Secure date to present Greenlake overview", "owner": "Mike", "notes": "GL ROSA proposal! Rocvk On! Roller", "due_date": "07-01-2022", "company": "GBTG", "status": "open"}
+{"username": "tom", "action": "Provide 30 minute overview of GBT Network opps", "owner": "Kelly", "notes": "Network", "due_date": "07-02-2022", "company": "GBTG", "status": "open"}
+{"username": "tom", "action": "Secure meeting to discuss Zerto", "owner": "Luke/Mike", "notes": "Zerto Make it happen\r\nRight now", "due_date": "07-03-2022", "company": "GBTG", "status": "open"}
+{"username": "tom", "action": "Provide 30 minute overview of GBT Network opps", "owner": "Kelly", "notes": "Network", "due_date": "07-02-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Seek update from", "owner": "Rick", "notes": "Ezmeral is the bom!", "due_date": "07-02-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Break contact with Manosh Mamidi", "owner": "Chris", "notes": "Weka", "due_date": "08-01-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Reach out to IBM team and seek update", "owner": "Rich/Mike", "notes": "Compute", "due_date": "07-03-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Chris to seek update from John D on Silver Peak POC/opp", "owner": "Chris", "notes": "Network/India", "due_date": "08-01-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "update from John D on Silver Peak POC", "owner": "NONE", "notes": "NONE", "due_date": "08-01-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Seek Nutanix rep and discuss opp", "owner": "Mike", "notes": "Nutanix", "due_date": "07-03-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Collaborate discussion with Brea (Squiri/Neri) meeting", "owner": "Mike", "notes": "Corp relationship", "due_date": "09-00-2022", "company": "American Express Card", "status": "open"}
+{"username": "tom", "action": "Reach out to Chuck and coordinate meeting to review Nutanix", "owner": "Mike", "notes": "Corp infrastructure", "due_date": "07-03-2022", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Send Bert and Ketan request to review", "owner": "Mike ", "notes": "Corp SAP meeting", "due_date": "01-03-2022", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Catch up with InfoSys on their discussion", "owner": "Mike", "notes": "NONE", "due_date": "01-02-2022", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Meet with Chuck to discuss current Storage opps", "owner": "Mike/Chirs", "notes": "Corp Storage", "due_date": "02-00-2023", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Update from Jamie", "owner": "Mike ", "notes": "Corp AI", "due_date": "01-02-2023", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Coordinate meeting with Don and Caroline", "owner": "Mike/Caroline", "notes": "NONE", "due_date": "02-00-2023", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Reach out to Troy", "owner": "Mike", "notes": "Equinix strategy meeting", "due_date": "02-00-2023", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Introduce Kelly", "owner": "Mike", "notes": "Aruba", "due_date": "02-02-2023", "company": "Freeport McMoran", "status": "open"}
+{"username": "tom", "action": "Matt to provide presentation to Kevin", "owner": "Matt/Mike", "notes": "Greenlake review", "due_date": "07-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Coordinate DHCI on Equinix total solution to Kevin Filbert. Obtain details of Dell solution from KF.", "owner": "Matt + team", "notes": "Storage - DHCI/Equinix/GL", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordinate callw the Nathan", "owner": "Mike", "notes": "SAP", "due_date": "07-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordinate call with Bhaskar and engage in HW refresh discussion", "owner": "Nathan", "notes": "SAP", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Talk to Bhaskar and discuss workshop in Houston w/", "owner": "Mike/Nathan", "notes": "SAP", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "schedule time with Gustaf and Kevin (storage portfolio review)", "owner": "Panda/Chris", "notes": "Storage - General", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "schedule time with Baiju", "owner": "Panda/Chris", "notes": "Storage - Plant locations", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Omer to meet Sheila - Do more with less", "owner": "Mike/Omer", "notes": "Storage - General", "due_date": "08-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Mike to coordinate Omer to meet Todd", "owner": "Mike", "notes": "Storage - General", "due_date": "07-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Coordinate DHCI on Equinix total solution to Kevin Filbert", "owner": "Panda ", "notes": "Storage - Equinix DHCI", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Coordiante time with Savitha and Troy", "owner": "Matt /Panda", "notes": "Storage - XP8 refresh", "due_date": "07-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "ask Savitha for existing serial numbers", "owner": "Mike", "notes": "Storage - XP8 refresh", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordinate a few of Zerto value prop to Kevin. Goal to improve utilization of existing licenses", "owner": "Luke/Rick", "notes": "Storage - Zerto ", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordiante a storage healthcheck for 300TBs of Nimble w/Clay Fandre. Filbert can help drive.", "owner": "Chris/Panda", "notes": "Storage - MN Nimble", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "review DP options for Gustaf", "owner": "Panda", "notes": "Storage - Data Protection", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Coordinate Edge device discuss with Moser and Prasad", "owner": "Mike/Rich", "notes": "Compute - Edge", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordinate meeting w/Brandon", "owner": "Mike", "notes": "Compute - General", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Coordinate HPC compute briefing when team is in town", "owner": "Rich/Dan/", "notes": "Compute - ", "due_date": "07-02-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "coordinate call with Kevin and HPE team", "owner": "Rick/Matt", "notes": "Compute - Legacy App ", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Discuss with Stein", "owner": "Mike/Dana", "notes": "Networking", "due_date": "07-03-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Reach out to Chris B and obtain better understanding of the POC", "owner": "Rick", "notes": "G2", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Reach out to David and understand his connections to networking", "owner": "Rick", "notes": "G2", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Confirm Trace3 HPE training credits", "owner": "Mike", "notes": "Training", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "set date with Malcolm to AZ trip", "owner": "Mike/Rick", "notes": "Equinix", "due_date": "07-01-2022", "company": "Honeywell", "status": "open"}
+{"username": "tom", "action": "Reach out to Kevin and get update", "owner": "Mike", "notes": "Intell Compute/storage", "due_date": "07-01-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "Introduce self to John Metta", "owner": "Mike", "notes": "Intell Compute/storage", "due_date": "08-01-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "Provide lite training / pres on new Gen 10 and Alletra", "owner": "Panda/Mark", "notes": "Intell Compute/storage", "due_date": "03-00-2023", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "Mark to work with Rick Stopf on eval servers", "owner": "Mark", "notes": "HPS", "due_date": "07-03-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "obtain best pricing on new Gen10+ servers", "owner": "Mike", "notes": "HPS", "due_date": "07-03-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "submit new OEM contract", "owner": "Mike", "notes": "HBT", "due_date": "08-01-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "send email to Ron P asking for date to meet", "owner": "Mike", "notes": "OEM meeting w/Ron P", "due_date": "02-00-2023", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "Call with CIO and discuss GL", "owner": "Mike/Matt", "notes": "PMT", "due_date": "07-01-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "talk to Keith White and debrief on conversation with HW CEO Kevin Dehoff", "owner": "Matt", "notes": "General", "due_date": "07-01-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "seek call with CIO that spoke to Rashmi", "owner": "Nathan", "notes": "General", "due_date": "07-03-2022", "company": "Honeywell OEM", "status": "open"}
+{"username": "tom", "action": "NONE", "owner": "Chris", "notes": "Zerto update", "due_date": "02-00-2023", "company": "Honor Health", "status": "open"}
+{"username": "tom", "action": "Mike to reach out to the ANM team and collaborate", "owner": "Mike", "notes": "Relationship", "due_date": "02-00-2023", "company": "Honor Health", "status": "open"}
+{"username": "tom", "action": "Reach out to Joel and secure a con call to discuss results of testing.", "owner": "Mike/Nathan", "notes": "EPIC", "due_date": "02-00-2023", "company": "Honor Health", "status": "open"}
+{"username": "tom", "action": "get update from Keith on Silverpeak", "owner": "MIKE", "notes": "NONE", "due_date": "08-01-2022", "company": "Honor Health", "status": "open"}
+{"username": "tom", "action": "Secure meeting to discuss HPEs HCI solutions", "owner": "Mike/Chris", "notes": "HCI refresh", "due_date": "01-02-2023", "company": "Republic Services", "status": "open"}
+{"username": "tom", "action": "Secure meeting to introduce Mike and Chris to Paul Wernes and Bill Halnon", "owner": "Chris ", "notes": "Zerto Refresh", "due_date": "01-02-2023", "company": "Republic Services", "status": "open"}
+{"username": "tom", "action": "Prepare CXO to CXO pre for Neri / Howard meeting", "owner": "Mike", "notes": "Corp relationship", "due_date": "02-02-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "Work with Computacenter on proposal format", "owner": "Mike/Rich", "notes": "Compute unsolicited RFP", "due_date": "01-02-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "Break contact with local Storage team", "owner": "Chris", "notes": "Storage opp", "due_date": "02-01-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "update Strategize with Hollie at Veeam to discuss next steps", "owner": "Chris/Mike", "notes": "Veeam opp", "due_date": "01-03-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "Ask Eileen for updates", "owner": "Mike", "notes": "Netowork opps", "due_date": "02-00-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "call Heather Peck for info", "owner": "mike", "notes": "Corp relationship", "due_date": "02-00-2023", "company": "Charles Schwab", "status": "open"}
+{"username": "tom", "action": "Scheduled dates with ITP and customer to review 2022 initiatives and share roadmap", "owner": "Rich", "notes": "Server refresh", "due_date": "02-00-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "meet with customer to share best practices on management", "owner": "Rick", "notes": "NONE", "due_date": "02-01-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "discuss other storage", "owner": "Chris", "notes": "NONE", "due_date": "03-01-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Meet with customer to review proposal", "owner": "Chris", "notes": "NONE", "due_date": "01-02-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Mike to work with Chris on final proposal", "owner": "Mike", "notes": "NONE", "due_date": "01-02-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Matt to present lunch n learn for Sam M.", "owner": "Matt", "notes": "GL lunch n learn", "due_date": "02-00-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Matt to meet with ITP and Dave Working to review GL", "owner": "Matt", "notes": "NONE", "due_date": "02-00-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Mike to reach out to Sr HPE Exec at Nonstop to help get meeting with Schwartz", "owner": "Mike", "notes": "NONE", "due_date": "02-00-2023", "company": "USFOODS", "status": "open"}
+{"username": "tom", "action": "Mike and Kelly to strategize on a network campaign.", "owner": "Kelly", "notes": "Network", "due_date": "02-00-2023", "company": "USFOODS", "status": "open"}
+{"username": "rick", "action": "zzszzzzzzz", "owner": "zzzzzz", "notes": "zzzzzz", "due_date": "08-01-2022", "company": "Honeywell", "status": "open"}
+@-logs
+{"owner": "tom", "log_info": "http://wookieware.com/monty.html cool"}
+{"owner": "myuserid", "log_info": "TBS - 453A M.2 Nas›"}
+{"owner": "rick", "log_info": "eryeryeryeryery"}
+{"owner": "rick", "log_info": "gdsgfdsfsdfsd"}
+{"owner": "rick", "log_info": "gdsgfdsfsdfsd"}
+{"owner": "rick", "log_info": "ttttXXXXXXXXX"}
+{"owner": "rick", "log_info": "qqqqqqq"}
+{"owner": "rick", "log_info": "qqqqqqq"}
+{"owner": "rick", "log_info": "qqqq"}
+{"owner": "rick", "log_info": "ccccc"}
+{"owner": "rick", "log_info": "dddddd"}
+{"owner": "rick", "log_info": "77777"}
+{"owner": "rick", "log_info": "eeeeeee"}
+{"owner": "rick", "log_info": "ssss"}
+{"owner": "rick", "log_info": "eeeee"}
+{"owner": "rick", "log_info": "romeo\r\n"}
+{"owner": "rick", "log_info": "aaaaaqAaaa"}
+@-deals
+{"username": "tom", "deal": "x", "company": "Honeywell", "customer": "x", "ope": "x", "quarter": "q1", "accountmgr": "x", "price": "100000", "status": "pursuit", "thoughts": "x", "partner": "x", "notes": "vv"}
+{"username": "tom", "deal": "x", "company": "Honeywell", "customer": "x", "ope": "x", "quarter": "q1", "accountmgr": "x", "price": "100000", "status": "pursuit", "thoughts": "x", "partner": "x", "notes": "vv"}
+{"username": "tom", "deal": "x", "company": "ACME", "customer": "x", "ope": "x", "quarter": "q3", "accountmgr": "x", "price": "4400", "status": "closed", "thoughts": "x", "partner": "x", "notes": "x"}
+{"username": "rick", "deal": "Petabyte storage at Equinix", "company": "Honeywell", "customer": "Chandan", "ope": "aaaaaaaa", "quarter": "q1", "accountmgr": "Hitchcock", "price": "1000000", "status": "pursuit", "thoughts": "One of two deals", "partner": "trace3", "notes": "The rain in spain"}
+@-company
+{"name": "Honeywell"}
+{"name": "Honeywell"}
+{"name": "Honeywell"}
+{"name": "Charles Schwab"}
+{"name": "Honor Healthcare"}
+{"name": "Honor Healthcare"}
+{"name": "ACME"}
+{"name": "dfghghadrgdafgfdgdfgdf"}
+{"name": "dfhdfhgdfhdfhdfhdffh"}
+{"name": "aaaaaaaaaaaa"}
+{"name": "test"}
+{"name": "rick"}
+{"name": "rick"}
+{"name": "rick kauffman"}
+@-customer
+{"company": "Honeywell", "name": "roy rodgers", "phone": "222-222-2222", "email": "roy@roy.com"}
+{"company": "Republic Services", "name": "Ricky Allen Kauffman", "phone": "602-999-3495", "email": "rick@rickkauffman.com"}
+{"company": "ACME", "name": "Bob Johnston", "phone": "123-456-7890", "email": "bob@acme.com"}
+@-meetings
+{"owner": "tom", "company": "Charles Schwab", "title": "Project 2", "notes": "asddsadsada\r\nasdfasdsd\r\nasdasd\r\nasd\r\n"}
+{"owner": "rick", "company": "Honeywell", "title": "my title", "notes": "asdsadad\r\nASDASDD"}
+{"owner": "rick", "company": "Honeywell", "title": "tttttt", "notes": "sdggsdgdsxgSXCZXCasasdcexport"}
+{"owner": "tom", "company": "Charles Schwab", "title": "wwww", "notes": "sdfsdfsda"}
+{"owner": "myuserid", "company": "ACME", "title": "Working session on PCs", "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"}

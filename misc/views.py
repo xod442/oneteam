@@ -24,7 +24,7 @@ __status__ = "Prototype"
 
 Flask script that manages strains and stores
 '''
-from flask import Flask, Blueprint, render_template, request, redirect, session, url_for, abort
+from flask import Flask, Blueprint, render_template, request, redirect, session, url_for, abort, send_file
 import pymongo
 import datetime
 import requests
@@ -93,6 +93,7 @@ def load(username):
 
     if request.method == 'POST':
         backupfile = request.files['file']
+        backupfile.save(secure_filename(backupfile.filename))
         filename = secure_filename(backupfile.filename)
         f = open(filename, "r")
         while True:
@@ -209,6 +210,11 @@ def dump(username):
     meetings = prep_meeting(db)
     message = 'Database has been written to the oneteam_data.txt file'
     return redirect(url_for('main_app.home_again', username=username, message=message))
+
+@misc_app.route("/download_report", methods=('GET', 'POST'))
+def download_report():
+    # Check user credentials
+    return send_file('oneteam_deals_report.html', as_attachment=True)
 
 @misc_app.route("/logout", methods=('GET', 'POST'))
 def logout():
