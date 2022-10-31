@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white" >Enter Admin PIN</h2>
+                    <form method="POST" action="{{ url_for('misc_app.load_pin_da5id', username = username)}}">
+                        <div class="row">
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                <label for="pin" style="color:white">Enter administrative PIN in text box below:</label>
+                                    <input type="password" class="form-control" id="pin" name="pin">
+                              </div>
+                              <h2 style="color:white"> {{ message }} </h2>
+                          </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Send Pin</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

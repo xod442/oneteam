@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+
+<div class="container">
+  <h4 style="color:white">Username: {{ username }}</h4>
+    <div class="row mt-50">
+        <div class="col-md-8 col-md-offset-2">
+            <h2 class="text-center heading-separator" style="color:white">Edit Deal</h2>
+            <form method="POST" action="{{ url_for('deals_app.edit_deal_complete2')}}">
+                <div class="row">
+                  <select class="selectpicker" name="status">
+                    {% if info[4] == "pursuit" %}
+                    <option value="pursuit" selected>{{ info[4] }}</option>
+                    {% else %}
+                    <option value="pursuit">Pursuit</option>
+                    {% endif %}
+                    {% if info[4] == "won" %}
+                    <option value="won" selected>{{ info[4] }}</option>
+                    {% else %}
+                    <option value="won">Won</option>
+                    {% endif %}
+                    {% if info[4] == "dev" %}
+                    <option value="dev" selected>{{ info[4] }}</option>
+                    {% else %}
+                    <option value="dev">Dev</option>
+                    {% endif %}
+                    {% if info[4] == "closed" %}
+                    <option value="closed" selected>{{ info[4] }}</option>
+                    {% else %}
+                    <option value="closed">Closed</option>
+                    {% endif %}
+                    {% if info[4] == "lost" %}
+                    <option value="lost" selected>{{ info[4] }}</option>
+                    {% else %}
+                    <option value="lost">Lost</option>
+                    {% endif %}
+                  </select>
+
+                  <select class="selectpicker" name="quarter">
+                    {% if info[3] == "q1" %}
+                    <option value="q1" selected>{{ info[3]}}</option>
+                    {% else %}
+                    <option value="q1">Q1</option>
+                    {% endif %}
+                    {% if info[3] == "q2" %}
+                    <option value="q2" selected>{{ info[3]}}</option>
+                    {% else %}
+                    <option value="q2">Q2</option>
+                    {% endif %}
+                    {% if info[3] == "q3" %}
+                    <option value="q3" selected>{{ info[3]}}</option>
+                    {% else %}
+                    <option value="q3">Q3</option>
+                    {% endif %}
+                    {% if info[3] == "q4" %}
+                    <option value="q4" selected>{{ info[3]}}</option>
+                    {% else %}
+                    <option value="q4">Q4</option>
+                    {% endif %}
+                  </select>
+                  </div>
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="partner" style="color:white">Partner:</label>
+                        <input type="text" value="{{ info[0] }}" class="form-control" id="partner" name="partner">
+                      </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="customer" style="color:white">Customer:</label>
+                        <input type="text" value="{{ info[8] }}" class="form-control" id="customer" name="customer">
+                      </div>
+                  </div>
+                    <div cla
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                          <label for="ope" style="color:white">OPE#:</label>
+                          <input type="text" value="{{ info[7] }}" class="form-control" id="ope" name="ope">
+                        </div>
+                    </div>
+                      <div cla
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                          <label for="deal" style="color:white">Deal:</label>
+                          <input type="text" value="{{ info[1] }}"class="form-control" id="deal" name="deal">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                          <label for="price" style="color:white">Deal Size:</label>
+                          <input type="text" value="{{ info[10] }}"class="form-control" id="price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="thoughts" style="color:white">Thoughts:</label>
+                          <input type="text" value="{{ info[5] }}" class="form-control" id="thoughts" name="thoughts">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="accountmgr" style="color:white">Account Manager:</label>
+                          <input type="text" required value="{{ info[2] }}"class="form-control" id="accountmgr" name="accountmgr">
+                        </div>
+                    </div>
+
+                        <div class="col-sm-12">
+                          <div>
+                            <label for="notes" style="color:white">Notes:</label>
+                            <textarea id="notes" name="notes" rows="7" cols="100">{{ info[6] }}</textarea>
+                          </div>
+                        </div>
+                </div>
+                <div>
+                  <input type="text" hidden value="{{ username }}" name="username">
+                  <input type="text" hidden value="{{ info[9] }}" id="number" name="number">
+                  {{ message }}
+                </div>
+                <div class="text-center mt-20">
+                    <button class="btn btn-green">Save Deal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+  {% endblock %}

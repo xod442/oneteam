@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white" >List of LOB</h2>
+                    <form method="POST" action="{{ url_for('main_app.home_again', message=message, username=username)}}">
+                      <div class="data-tables datatable-dark">
+                            <table id="example" class="styled-table">
+                              <thead class="text-capitalize">
+                                  <tr>
+                                      <th>Number</th>
+                                      <th>LOB ID</th>
+                                      <th>OPE</th>
+                                      <th>Deal</th>
+                                      <th>Size</th>
+                                      <th>Edit</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                      {% for deal in my_deals %}
+                                      <tr>
+                                          <td>{{deal[0]}}</td>
+                                          <td>{{deal[1]}}</td>
+                                          <td>{{deal[2]}}</td>
+                                          <td>{{deal[3]}}</td>
+                                          <td>{{ "${:,.2f}".format(deal[4]) }}</td>
+                                          <td><a href="{{ url_for('dealsx_app.edit_dealsx_list',username=username,
+                                                                                               number=deal[0],
+                                                                                               ope=deal[2],
+                                                                                               deal=deal[3],
+                                                                                               price=deal[4])}}">
+                                                                                               <img src="{{ url_for('static', filename='img/edit.png') }}" width="20" height="20"></a></td>
+                                      </tr>
+
+                                      {% endfor %}
+                                  </tbody>
+                          </table>
+                        </div>
+                    </div>
+                        <div>
+
+                              {{ message }}
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">HOME</button>
+                        </div>
+                          </form>
+                </div>
+            </div>
+
+
+
+
+
+  {% endblock %}

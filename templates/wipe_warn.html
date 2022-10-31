@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+            <div class="container">
+
+
+                <div class="row mt-50">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center heading-separator" style="color:white">Oneteam</h2>
+                          <h2 style="color:white">Backup Database</h2>
+                        <form method="POST" action="{{ url_for('misc_app.wipe', username=username)}}">
+                            <div class="row" style="color:white">
+                                <h3 style="color:red"> You are about to wipe out everything the database </h3>
+                                <p style="color:red">Proceed with caution!! You've been warned!</p>
+                            </div>
+                            <div>
+
+                            <div class="text-center mt-20">
+                                <button class="btn btn-red">Wipe DB</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div><!-- /.form -->
+
+{% endblock %}

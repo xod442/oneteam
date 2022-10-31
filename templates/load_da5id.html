@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row mt-50">
+        <div class="col-md-8 col-md-offset-2">
+            <h2 class="text-center heading-separator" style="color:white">Load the One.Team database with Da5id</h2>
+
+                <h4 style="color:white">Click on the "Choose File" button and navigate to the da5id_data.txt file,then click on load file:</h4>
+                <div class="col-sm-6">
+                  <div>
+                    <label for="notes" style="color:red">WARNING:</label>
+                    <textarea id="notes" readonly name="notes" rows="8" cols="50">DANGER WILL ROBINSON!! You are attempting to load the oneteam database. Make absolutley sure you know what you are doing!!! If not you will have multiple duplicate records! Proceed if you fully understand what this is saying. If not call the wookie!</textarea>
+                  </div>
+                </div>
+
+                    <form action="{{ url_for('misc_app.load_da5id', username=username)}}" method="post" enctype="multipart/form-data">
+                      <input type="file" name="file">
+
+                      <div class="text-center mt-20">
+                          <button class="btn btn-green">Load File</button>
+                      </div>
+                    </form>
+                    <form action="{{ url_for('misc_app.wipe_warn', username=username)}}" method="post">
+                      <BR><BR><BR><BR><BR>
+                      <div class="text-center mt-20">
+                          <button class="btn btn-red">WIPE DATABASE!</button>
+                          <h2 style="color:red"> Wiping the database will clear all records, be very careful, did you dump the database first?!!</h2>
+                      </div>
+                    </form>
+              </div>
+              </div>
+          </div><!-- /.form -->
+
+{% endblock %}

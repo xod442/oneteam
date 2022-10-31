@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+            <div class="container">
+
+
+                <div class="row mt-50">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center heading-separator" style="color:white">OneTeam</h2>
+                        <form method="POST" action="{{ url_for('main_app.home_again',username = username)}}">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <label for="message">System Message:</label>
+                                      <input type="text" readonly class="form-control" id="message" name="message" placeholder="{{ message }}">
+                                      <input hidden type="text" value="{{ username }}" name="username">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                              <p style="color:red"> {{ error }} </p>
+                            </div>
+                            <div>
+                              <input type="text" hidden value="{{ username }}" name="username">
+                              {{ message }}
+                            </div>
+                            <div class="text-center mt-20">
+                                <button class="btn btn-green">Home</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.form -->
+
+{% endblock %}

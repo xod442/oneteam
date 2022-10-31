@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white" >Add Log Entry</h2>
+                    <form method="POST" action="{{ url_for('logs_app.add_log', username = username)}}">
+                        <div class="row">
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                <label for="log_info" style="color:white">Enter log information in text box below:</label>
+                                    <textarea id="log_info" placeholder="Do Not Use Quotes" required name="log_info" rows="10" cols="100"></textarea>
+                              </div>
+                          </div>
+                        </div>
+                        <div>
+                            <input type="text" hidden value="{{ username }}" name="username">
+                              {{ message }}
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Add Log</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

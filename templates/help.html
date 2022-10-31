@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+            <div class="container">
+
+
+                <div class="row mt-50">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center heading-separator" style="color:white">OneTeam</h2>
+                        <form method="POST">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <label for="message">Download PDF: </label>
+                                      <a href="http://techworldwookie.com/manuals/oneteam.pdf">oneTeam Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                              <p style="color:red"> {{ data }} </p>
+                            </div>
+                            <div class="text-center mt-20">
+                                <button class="btn btn-green">Home</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.form -->
+
+{% endblock %}

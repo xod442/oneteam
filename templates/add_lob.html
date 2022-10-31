@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white" >Add Line of Business Owner</h2>
+                    <form method="POST" action="{{ url_for('logs_app.add_lob', username = username)}}">
+                        <div class="row">
+                                <div class="form-group">
+                                  <label for="firstname" style="color:white">First Name:</label>
+                                  <input type="text" class="form-control" id="firstname" name="firstname">
+                                </div>
+                                <div class="form-group">
+                                  <label for="lastname" style="color:white">Last Name:</label>
+                                  <input type="text" class="form-control" id="lastname" name="lastname">
+                                </div>
+                                <div class="form-group">
+                                  <label for="title" style="color:white">Title:</label>
+                                  <input type="text" class="form-control" id="title" name="title">
+                                </div>
+                                <div class="form-group">
+                                  <label for="modality" style="color:white">Modality:</label>
+                                  <input type="text" class="form-control" id="modality" name="modality">
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Add LOB</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+
+  {% endblock %}

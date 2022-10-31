@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white" >Line of Business Owners</h2>
+                    <form method="POST" action="{{ url_for('main_app.home_again', message=message, username=username)}}">
+                      <div class="data-tables datatable-dark">
+                            <table id="example" class="styled-table">
+                                  <thead class="text-capitalize">
+                                      <tr>
+                                          <th>Number</th>
+                                          <th>Log Entry</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                          {% for log in my_logs %}
+                                          <tr>
+                                              <td>{{log[0]}}</td>
+                                              <td>{{log[1]}}</td>
+                                          </tr>
+                                          {% endfor %}
+                                      </tbody>
+                              </table>
+                    </div>
+                        <div>
+
+                              {{ message }}
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">HOME</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}
+
+  {% block scripts %}
+  <script>
+    $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        dom: 'Bfrtip',
+        select: true
+    } );
+} );
+
+  </script>
+  {% endblock %}

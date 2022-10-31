@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+          <div class="container">
+            <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white"> Make Changes</h2>
+                    <form method="POST" action="{{ url_for('actions_app.edit_action_complete2')}}">
+                      <div class="col-sm-4">
+                        <select class="selectpicker" name="status">
+                            {% if status == "open" %}
+                            <option value="open" selected>{{ status }}</option>
+                            {% else %}
+                            <option value="open">open</option>
+                            {% endif %}
+                            {% if status == "closed" %}
+                            <option value="closed" selected>{{ status }}</option>
+                            {% else %}
+                            <option value="closed">closed</option>
+                            {% endif %}
+                        </select>
+                      </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="action" style="color:white">Change the action item and submit:</label>
+                                  <input type="text" value="{{ action }}" class="form-control" id="action" name="action">
+                                  <input type="text" hidden value="{{ number }}" id="number" name="number">
+                                  <input type="text" hidden value="{{ username }}" name="username">
+                                  {{ message }}
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label for="due_date" style="color:white">Due Date:</label>
+                                  <input type="text" value="{{ due_date }}" class="form-control" id="due_date" name="due_date">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label for="owner" style="color:white">Owner:</label>
+                                  <input type="text" value="{{ owner }}" class="form-control" id="owner" name="owner">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="notes" style="color:white">Notes/Next Steps:</label>
+                                  <textarea id="notes" placeholder="Do Not Use Quotes" required name="notes" rows="10" cols="100">{{ notes }}</textarea>
+                            </div>
+                        </div>
+                        <div>
+                          <input type="text" hidden value="{{ username }}" name="username">
+                          {{ message }}
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Change Action Item</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

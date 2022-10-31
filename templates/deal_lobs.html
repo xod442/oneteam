@@ -1,0 +1,51 @@
+{% include "hw-it.html" %}
+
+{% block content %}
+{% for line in lines %}
+<div class="card-container">
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[0]['deal']}}</h4>
+    <p style="color:black">{{line[0]['ope']}}</p>
+    <p style="color:black">{{line[0]['price']}}</p>
+  </div>
+</div>
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[1]['deal']}}</h4>
+    <p style="color:black">{{line[1]['ope']}}</p>
+    <p style="color:black">{{line[1]['price']}}</p>
+  </div>
+</div>
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[2]['deal']}}</h4>
+    <p style="color:black">{{line[2]['ope']}}</p>
+    <p style="color:black">{{line[2]['price']}}</p>
+  </div>
+</div>
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[3]['deal']}}</h4>
+    <p style="color:black">{{line[3]['ope']}}</p>
+    <p style="color:black">{{line[3]['price']}}</p>
+  </div>
+</div>
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[4]['deal']}}</h4>
+    <p style="color:black">{{line[4]['ope']}}</p>
+    <p style="color:black">{{line[4]['price']}}</p>
+  </div>
+</div>
+<div class="card-task">
+  <div class="container">
+    <h4>{{line[5]['deal']}}</h4>
+    <p style="color:black">{{line[5]['ope']}}</p>
+    <p style="color:black">{{line[5]['price']}}</p>
+  </div>
+</div>
+
+</div>
+{% endfor %}
+{% endblock %}

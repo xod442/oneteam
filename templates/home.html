@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+<h4 style="color:white">Username: {{ username }}</h4>
+
+<div class="col-lg-8">
+        <!-- seo fact area start -->
+                        <h2 style="color:white">These Action Items Were Created By You</h2>
+                        <div class="data-tables datatable-dark">
+                              <table id="example" class="styled-table">
+                                    <thead class="text-capitalize">
+                                        <tr>
+                                            <th>Number</th>
+                                            <th>Assigned</th>
+                                            <th>Due</th>
+                                            <th>Company</th>
+                                            <th>Action</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for action in my_actions %}
+                                            <tr>
+                                                <td>{{action[0]}}</td>
+                                                <td>{{action[1]}}</td>
+                                                <td>{{action[2]}}</td>
+                                                <td>{{action[3]}}</td>
+                                                <td>{{action[4]}}</td>
+                                                <td>{{action[5]}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                </table>
+                      </div>
+                </div>
+
+<div class="col-sm-6">
+    <div class="form-group">
+      <label for="message" style="color:white">System Message:</label>
+      <input type="text" readonly class="form-control" id="message" name="message" value="{{ message }}">
+    </div>
+</div>
+
+
+<div class="col-lg-8">
+        <!-- seo fact area start -->
+                <h2 class="header-title" style="color:white">database records</h2>
+                      <div class="data-tables datatable-dark">
+                            <table  class="styled table">
+                                  <thead class="text-capitalize">
+                                      <tr>
+                                          <th>Deals</th>
+                                          <th>Logs</th>
+                                          <th>Action Items</th>
+                                          <th>Companies</th>
+                                          <th>Customers</th>
+                                          <th>Meetings</th>
+                                          <th>Travel</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>{{stats[0]}}</td>
+                                              <td>{{stats[1]}}</td>
+                                              <td>{{stats[2]}}</td>
+                                              <td>{{stats[3]}}</td>
+                                              <td>{{stats[4]}}</td>
+                                              <td>{{stats[5]}}</td>
+                                              <td>{{stats[6]}}</td>
+                                          </tr>
+                                      </tbody>
+                              </table>
+
+                    </div>
+            </div>
+
+
+
+
+
+  {% endblock %}

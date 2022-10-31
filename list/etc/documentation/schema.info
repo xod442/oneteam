@@ -1,0 +1,32 @@
+{
+"_id" : ObjectId("62cdcac59a0ffae6480c6812"),
+"username" : "tom",
+"action" : "Coordinate meeting with Don and Caroline",
+"owner" : "Mike/Caroline",
+"notes" : "NONE",
+"due_date" : "02-00-2023",
+"company" : "Freeport McMoran",
+"number" : 18,
+"uuid" : "05018723-9a43-415f-9fe4-270d8bf72f41",
+"status" : "open",
+"when" : ISODate("2022-07-12T19:25:57.428Z")
+}
+
+{
+"_id" : ObjectId("62ccb804cbcba1098c9eaff5"), 
+"username" : "tom",
+"deal" : "x",
+"company" : "Honeywell",
+"customer" : "x",
+"ope" : "x",
+"quarter" : "q1",
+"accountmgr" : "x",
+"price" : "100000",
+"status" : "pursuit",
+"thoughts" : "x",
+"partner" : "x",
+"notes" : "vv",
+"number" : 1,
+"uuid" : "35128b46-5cf9-4354-afb3-aca1cef818b5",
+"when" : ISODate("2022-07-11T23:53:40.603Z")
+ }

@@ -1,0 +1,96 @@
+<html>
+<head>
+</head>
+<style>
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.styled-table {
+    background: gray;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #7d60db;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    color: black;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #aabbccdd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #aabbddee;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+</style>
+<body style="background-color:#548a7e">
+<h1> Oneteam Deal Report for {{ username }}</h1>
+
+
+<div class="col-lg-12">
+        <!-- seo fact area start -->
+        <div class="card">
+              <div class="card-body"
+                <h1>List of Deals</h1>
+                <div class="data-tables datatable-dark">
+                      <table id="example" class="styled-table">
+                            <thead class="text-capitalize">
+                                <tr>
+                                    <th>Number</th>
+                                    <th>QTR</th>
+                                    <th>Acct Mgr</th>
+                                    <th>Company</th>
+                                    <th>Customer</th>
+                                    <th>Partner</th>
+                                    <th>OPE</th>
+                                    <th>Deal</th>
+                                    <th>Size</th>
+                                    <th>Status</th>
+                                    <th>Thoughts</th>
+                                    <th>Notes</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    {% for deal in my_deals %}
+                                    <tr>
+                                        <td>{{deal[0]}}</td>
+                                        <td>{{deal[1]}}</td>
+                                        <td>{{deal[2]}}</td>
+                                        <td>{{deal[3]}}</td>
+                                        <td>{{deal[4]}}</td>
+                                        <td>{{deal[5]}}</td>
+                                        <td>{{deal[6]}}</td>
+                                        <td>{{deal[7]}}</td>
+                                        <td>{{ "${:,.2f}".format(deal[8]) }}</td>
+                                        <td>{{deal[9]}}</td>
+                                        <td>{{deal[10]}}</td>
+                                        <td>{{deal[11]}}</td>
+
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                        </table>
+              </div>
+              <p><h3 style="color:black">Deal Pipeline is : {{ "${:,.2f}".format(total) }} </h3></p>
+              <p><h3 style="color:red">Deals under development : {{ "${:,.2f}".format(dev_total) }} </h3></p>
+        </div>
+</div>
+</body>
+</html>

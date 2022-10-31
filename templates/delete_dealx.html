@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+          <h4 style="color:white">Username: {{ username }}</h4>
+
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:white">Delete LOB</h2>
+                    <form method="POST" action="{{ url_for('dealsx_app.delete_dealx', username=username)}}">
+                      <div class="col-sm-4">
+                          <select class="selectpicker" name="deal">
+                              <option>unselected</option>
+                              {% for deal in my_deals %}
+                                  <option>{{ deal }}</option>
+                              {% endfor %}
+                          </select>
+                          <div style="color:red">
+                            {{ message }}
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                      <input type="text" hidden value="{{ username }}" name="username">
+                      {{ message }}
+                    </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Delete Deal</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+<h2 style="color:white">Honeywell Corporate IT</h2>
+<div class="card-container">
+<div class="card">
+  <img src="{{ url_for('static', filename='img/manuel.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Manuel Ayala</b></h4>
+    <p style="color:black">Dir of IT, HPC & DC</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='img/stein.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Stein Ericcson</b></h4>
+    <p style="color:black">Dir of IT, Arch & Strategy</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='img/brian.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Brian Hickle</b></h4>
+    <p style="color:black">Dir of IT Operations</p>
+  </div>
+</div>
+<div class="card">
+  <img src="{{ url_for('static', filename='img/santosh.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Santosh Naik</b></h4>
+    <p style="color:black">Dir of IT Network Services</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='img/brandon.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Brandon Harvey</b></h4>
+    <p style="color:black">Dir of IT Arch DC & Plants</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='img/bhaskar.png') }}" class="center" width="125" height="auto">
+  <div class="container">
+    <h4><b>Bhaskar Ravikan</b></h4>
+    <p style="color:black">Dir of IT, ERP & Systems</p>
+  </div>
+</div>
+</div>
+
+
+
+  {% endblock %}

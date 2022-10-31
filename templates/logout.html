@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header id="masthead" class="site-header site-header-white">
+
+        <section class="site-section section-ui-elements">
+            <div class="container">
+
+
+                <div class="row mt-50">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center heading-separator" style="color:white">Goodbye</h2>
+                        <form method="POST" action="{{ url_for('main_app.login',username = username)}}">
+
+                              <p style="color:red"> {{ error }} </p>
+                            <div class="text-center mt-20">
+                                <button class="btn btn-green">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.form -->
+
+{% endblock %}

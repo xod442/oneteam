@@ -1,0 +1,92 @@
+
+{% block content %}
+
+<nav id="primary-navigation" class="site-navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <a class="site-title" style="color:white"><span>One</span>team</a>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li><a href="{{ url_for('main_app.home_again',username = username) }}">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Deals<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('deals_app.add_deal',username = username) }}">Add Deal</a></li>
+                      <li><a href="{{ url_for('deals_app.list_deals',username = username) }}">List Deals</a></li>
+                      <li><a href="{{ url_for('deals_app.edit_deal',username = username) }}">Edit Deal</a></li>
+                      <li><a href="{{ url_for('deals_app.delete_deal',username = username) }}">Delete Deal</a></li>
+                      <li><a href="{{ url_for('main_app.test') }}">Test</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Notes<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('logs_app.add_log',username = username) }}">Add Log</a></li>
+                      <li><a href="{{ url_for('logs_app.list_log',username = username) }}">List Log</a></li>
+                      <li><a href="{{ url_for('logs_app.edit_log',username = username) }}">Edit Log</a></li>
+                      <li><a href="{{ url_for('logs_app.delete_log',username = username) }}">Delete Log</a></li>
+                      <li><a href="{{ url_for('meetings_app.add_meeting',username = username) }}">Add Meeting</a></li>
+                      <li><a href="{{ url_for('meetings_app.view_meeting',username = username) }}">List Meeting</a></li>
+                      <li><a href="{{ url_for('meetings_app.edit_meeting',username = username) }}">Edit Meeting</a></li>
+                      <li><a href="{{ url_for('meetings_app.delete_meeting',username = username) }}">Delete Meeting</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('actions_app.add_action',username = username) }}">Add Action</a></li>
+                      <li><a href="{{ url_for('actions_app.list_action',username = username) }}">List Action</a></li>
+                      <li><a href="{{ url_for('actions_app.edit_action',username = username) }}">Edit Action</a></li>
+                      <li><a href="{{ url_for('actions_app.delete_action',username = username) }}">Delete Action</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('company_app.add_company',username = username) }}">Add Company</a></li>
+                      <li><a href="{{ url_for('company_app.list_company',username = username) }}">List Company</a></li>
+                      <li><a href="{{ url_for('company_app.delete_company',username = username) }}">Delete Company</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacts<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('customer_app.add_customer',username = username) }}">Add Contact</a></li>
+                      <li><a href="{{ url_for('customer_app.list_customer',username = username) }}">List Contact</a></li>
+                      <li><a href="{{ url_for('customer_app.edit_customer',username = username) }}">Edit Contact</a></li>
+                      <li><a href="{{ url_for('customer_app.delete_customer',username = username) }}">Delete Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Travel<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('travel_app.add_travel',username = username) }}">Add Travel</a></li>
+                      <li><a href="{{ url_for('travel_app.list_travel',username = username) }}">List Travel</a></li>
+                      <li><a href="{{ url_for('travel_app.edit_travel',username = username) }}">Edit Travel</a></li>
+                      <li><a href="{{ url_for('travel_app.delete_travel',username = username) }}">Delete Travel</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">All Lists<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('list_app.list_actions',username = username) }}">Action Items</a></li>
+                      <li><a href="{{ url_for('list_app.deals_list',username = username) }}">Deals</a></li>
+                      <li><a href="{{ url_for('list_app.all_meeting',username = username) }}">Meetings</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Utility<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li><a href="{{ url_for('misc_app.dump', username = username) }}">Dump DB</a></li>
+                      <li><a href="{{ url_for('misc_app.help', username = username) }}">Help</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('misc_app.logout') }}">Logout</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav><!-- /.site-navigation -->
+{% endblock %}
